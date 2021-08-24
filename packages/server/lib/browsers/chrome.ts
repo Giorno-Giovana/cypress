@@ -504,7 +504,7 @@ export = {
 
     la(criClient, 'expected Chrome remote interface reference', criClient)
 
-    await criClient.ensureMinimumProtocolVersion('1.3')
+    await criClient.ensureMinimumProtocolVersion('1.2')
     .catch((err) => {
       // if this minumum chrome version changes, sync it with
       // packages/web-config/webpack.config.base.ts and
